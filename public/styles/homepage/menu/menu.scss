@@ -1,0 +1,130 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+
+.menu{
+  padding: 5%;
+  &__subtitle{
+    color: #777777;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+  } 
+  &__title{
+    color: #222222;
+    font-family: $primary-font;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    margin: 4% 0%;
+      } 
+  &__box{
+    display: flex;
+    flex-direction: row;
+    margin: 4% 0%;
+    &__img{
+      text-align: center;
+      flex: 1;
+      width: 100px;
+      height: 100px;
+
+      &__image{
+        object-fit: cover;
+        object-position: center bottom;
+        height: 85%;
+        width: 85%;
+      }
+    }
+    &__text{
+      flex: 2;
+      &__title{
+        font-family: $primary-font;
+        font-weight: 400; 
+        font-size: 24px;
+        line-height: 24px;
+        color: #222222;
+      }
+      &__text{
+        font-family: $third-font;
+        color: #222222;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+  &__desktop{
+    display: none;
+  }
+  &__images {
+    text-align: center;
+    object-fit: cover;
+    width: 85vw;
+    height: auto;
+    &__photo{
+      width: 100%;
+      height: 100%;
+      margin-left: 5%;
+    }
+  }
+  &__button {
+    position:unset !important;
+    color: #222222;
+  }
+  &__buttons{
+    display:flex;
+    justify-content:end;
+    gap: 5em;
+    margin-bottom: 5em;
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .menu{
+    padding: 0 15%;
+    &__title{
+      padding: 1em 0 0 0;
+      margin: 0;
+    }
+    &__container{
+      display: flex;
+    }
+    &__box{
+      &__img{
+        &__image{
+          object-position: center;
+          height: 92px;
+          width: 60%;
+        }
+      }
+    }
+    &__imagebox{
+      display: flex;
+      gap: 2em;
+      margin-bottom: 2em;
+    }
+    &__images{
+      width: auto;
+      &__photo{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        object-fit: cover;
+      }
+    }
+    &__desktop{
+      display: block;
+      top: -100px;
+    }
+    &__movil{
+      display: none;
+    }
+    &__buttons {
+      margin-bottom: 0;
+    }
+  }
+}

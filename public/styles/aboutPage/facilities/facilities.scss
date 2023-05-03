@@ -1,0 +1,87 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.facilities{
+  background-color: #222222;
+  color: $color;
+  padding: 5%;
+  &__desktop{
+    display: none;
+  }
+  &__subtitle{
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+    text-align: center;
+    margin: 8% 0%;
+  }
+  &__title{
+    font-family: Old Standard TT;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    text-align: center;
+  }
+  &__infobox{
+    padding-left: 5%;
+    margin-top: 2em;
+    background-color:  #292929;
+    background-repeat: no-repeat;
+    background-position: right 10% top 10px;
+    height: 370px;
+    min-width: 290px;
+    &__icon{
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10%;
+      padding-top: 20%;
+    }
+    &__title{
+      font-family: $primary-font;
+      color: $color;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 30px;
+      margin: 30% 0% 5% 0%;  
+    }
+    &__text{
+      font-family: $secondary-font;
+      color: #777777;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      width: 80%;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .facilities{
+    padding: 5% 15%;
+    &__movil{
+      display: none !important;
+    }
+    &__subtitle{
+      margin: 2% 0%;
+    }
+    &__container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+    &__infobox{
+      flex: 0 0 30%;
+      height: 320px;
+      margin-top: 2em;
+      padding-left: 2em;
+      background-position: right top;
+    }
+  }
+}

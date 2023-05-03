@@ -1,0 +1,54 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.facts{
+  background-color: #222222;
+  text-align: center;
+  &__box{
+    padding: 5%;
+    &__icon{
+      padding: 5%;
+    }
+    &__title{
+      font-family: $third-font;
+      font-size: 60px;
+      font-weight: 700;
+      color: $color;
+      margin-bottom: -5px; 
+
+      &__symbol {
+      font-family: $third-font;
+      font-size: 16px;
+      font-weight: 700;
+      color: $color;
+      }
+    }
+    &__text{
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 19.1px;
+      color: #999999;
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .facts{
+    margin: 2em 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box{
+      padding: 4%;
+      &__icon{
+        text-align: left;
+        width: 25%;
+        &__img{
+          width: 50px;
+        }
+      }
+    }
+  }
+}

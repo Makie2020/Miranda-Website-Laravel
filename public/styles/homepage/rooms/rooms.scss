@@ -1,0 +1,177 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+
+.rooms{
+  padding-left: 5%;
+  text-align: center;
+  position: relative;
+  &__subtitle{
+    color: #777777;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+  }
+  &__title{
+    color: #222222;
+    font-family: $primary-font;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    margin: 5% 0%;
+  }
+  &__iconbox{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+    top: 20px;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    &__icon{
+      margin: 2%;
+    }
+  }
+  &__info{
+    text-align: center;
+    margin-right: 5%;
+    background-color: #FFFFFF;
+    width: 70%;
+    margin: 0 auto;
+    top: -22px;
+    z-index: 1;
+    position: relative;
+    padding: 2em;
+    &__title{
+      font-family: $primary-font;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: -1.2000000476837158px;
+    }
+    &__text{
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 5% 0%;
+    }
+    &__price{
+      font-family: $secondary-font;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 43px;
+      color: #BEAD8E;
+      ;
+    }
+    &__night{
+      font-family: $secondary-font;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 43px;
+      color:#BEAD8E;
+      ;
+    }
+  }
+}
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.swiper {
+  width: 80%;
+}
+
+.image__wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.image__wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.swiper-button-prev {
+  background-color: #FFFFFF; 
+  color: #222222!important;
+  padding: 5%;
+}
+
+.swiper-button-next {
+  color: #FFFFFF;
+  background-color:#BDAC8D;
+  color: var(--swiper-navigation-color);
+  padding: 5%;
+}
+
+:root {
+--swiper-navigation-color: #FFFFFF;
+--swiper-theme-color: black;
+}
+@media only screen and (min-width: 1000px) {
+  .rooms{
+    padding-top: 7em;
+    padding-bottom: 10em;
+    padding-left: 0;
+    text-align: center;
+    &__container{
+      position: relative;
+    }
+    &__iconbox{
+      width: 230px;
+      position: absolute;
+      top: -3px;
+      height: 30px;
+      z-index: 2;
+      left: 0; 
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto; 
+    }
+    &__info{
+      display: flex;
+      justify-content: center;
+      background-color: #FFFFFF;
+      text-align: left;
+      position: relative;
+      padding: 1em;
+      width: 326px;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      bottom: -100px;
+      height: 200px;
+      &__title{
+        font-size: 28px;
+      }
+      &__firstbox{
+        flex: 3;
+      }
+      &__secondbox{
+        flex: 1;
+        padding-top: 2em;
+
+      }
+    }
+  }
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide{
+    height: 550px;
+  }
+  .image__wrapper{
+    height: 550px;
+  }
+}

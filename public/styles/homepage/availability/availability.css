@@ -1,0 +1,78 @@
+.availibility {
+  background-color: #222222;
+  color: #FFFFFF;
+  padding: 7% 5%;
+}
+.availibility__firstbox {
+  margin-top: 5%;
+}
+.availibility__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5%;
+}
+.availibility__text:last-of-type {
+  margin-top: 5%;
+}
+.availibility__input__box {
+  background: url(../../../icons/Date.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 1px solid #BEAD8E;
+  padding: 8px;
+  padding-right: 50%;
+}
+.availibility__input__box::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  align-items: center;
+  padding-left: 10%;
+}
+.availibility__button {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  padding: 5%;
+  background-color: #BEAD8E;
+  border: none;
+  color: #FFFFFF;
+  margin: 8% 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .availibility {
+    height: 200px;
+    padding: 2% 5% 2% 6%;
+  }
+  .availibility__box {
+    display: flex;
+    justify-content: space-around;
+  }
+  .availibility__box__::-moz-placeholder {
+    background-position: left 10px center;
+  }
+  .availibility__box__::placeholder {
+    background-position: left 10px center;
+  }
+  .availibility__input__box {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .availibility__firstbox {
+    margin-right: 20%;
+    margin-top: 0;
+  }
+  .availibility__button {
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.5em 0;
+    transition: all 0.2s;
+  }
+}/*# sourceMappingURL=availability.css.map */

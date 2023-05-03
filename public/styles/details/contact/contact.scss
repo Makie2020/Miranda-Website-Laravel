@@ -1,0 +1,60 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.contact{
+  padding: 5%;
+  &__container{
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 90%;
+    min-height: 160px;
+    &__first{
+      background-image: url(../../../icons/01.png);
+    }
+    &__second{
+      background-image: url(../../../icons/02.png);
+      margin: 25% 0%;
+    }
+    &__third{
+      background-image: url(../../../icons/03.png);
+    }
+    &__imagebox{
+      margin-right: 5%;
+    }
+    &__info{
+      &__title{
+        font-family: $primary-font;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 10%;
+      }
+      &__text{
+        font-family: $third-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #777777;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9em;
+    &__container{
+      flex: 1 1 30%;
+      &__second{
+        margin: 0;
+      }
+    }
+  }
+}

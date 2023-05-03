@@ -1,0 +1,73 @@
+.rest {
+  margin: 5%;
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+}
+.rest__image {
+  min-width: 330px;
+  min-height: 330px;
+  margin: 0 auto;
+}
+.rest__image__img {
+  width: 100%;
+  height: 100%;
+}
+.rest__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  color: #777777;
+  margin-top: 10%;
+}
+.rest__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: -1.0499999523px;
+  margin: 8% 0%;
+}
+.rest__text {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 85%;
+  color: #777777;
+}
+.rest__button {
+  padding: 5% 15%;
+  background-color: #BEAD8E;
+  color: white;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  border: none;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.36);
+}
+
+@media only screen and (min-width: 1000px) {
+  .rest {
+    box-shadow: none;
+  }
+  .rest__container {
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.1);
+    display: flex;
+    gap: 3em;
+    width: 75%;
+    margin: 0 auto;
+    padding: 2em;
+  }
+  .rest__image {
+    width: 30%;
+  }
+  .rest__title {
+    margin: 2% 0%;
+    width: 75%;
+  }
+}/*# sourceMappingURL=restaurant.css.map */

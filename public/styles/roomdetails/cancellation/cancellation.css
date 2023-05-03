@@ -1,0 +1,31 @@
+.cancellation {
+  padding: 5% 15%;
+}
+.cancellation__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 5% 0 .cancellation__title;
+}
+.cancellation__line {
+  border-top: #F1F1F1;
+  width: 95%;
+  margin: 5% 0%;
+}
+.cancellation__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+}
+
+@media only screen and (min-width: 1000px) {
+  .cancellation__text {
+    width: 70%;
+  }
+  .cancellation__line {
+    width: 70%;
+  }
+}/*# sourceMappingURL=cancellation.css.map */

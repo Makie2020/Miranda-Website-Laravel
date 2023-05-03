@@ -1,0 +1,29 @@
+.aboutPage {
+  text-align: center;
+  margin: 5%;
+}
+.aboutPage__video {
+  margin-bottom: 8%;
+  text-align: center;
+}
+.aboutPage__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #222222;
+}
+
+@media only screen and (min-width: 1000px) {
+  .aboutPage {
+    margin: 0 15%;
+  }
+  .aboutPage__video {
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+  .aboutPage__title {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+}/*# sourceMappingURL=aboutInfoPage.css.map */

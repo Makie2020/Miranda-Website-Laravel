@@ -1,0 +1,64 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.availability {
+  padding: 5%;
+  &__title{
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.5400000214576721px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  &__input{
+    margin: 5%;
+    &__name {
+      font-family: $secondary-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 15px;
+      color: #222222;
+    }
+    &__input{
+      background-image: url(../../../icons/Calender.png);
+      background-repeat: no-repeat;
+      background-position: right 10% center;
+      background-color: #F8F8F8;
+      color: $color;
+      padding: 20px;
+      border: none;
+      width: 95%;
+      margin: 5% 0%;
+      &::-webkit-input-placeholder{
+        font-family: $secondary-font;
+        color: #777777;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+      }
+    }
+  }
+  &__buttonbox{
+    margin-left: 5%;
+    &__button{
+      background: #BEAD8E;
+      padding: 20px;
+      color: $color;
+      border: none;
+      width: 90%;
+      letter-spacing: 2.8px;
+      
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .availability{
+    padding: 0;
+    flex: 0 0 30%;
+  }
+}

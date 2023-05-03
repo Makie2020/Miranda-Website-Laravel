@@ -1,0 +1,107 @@
+.popular {
+  background-color: #222222;
+  padding: 8%;
+  text-align: center;
+}
+.popular__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  color: #BDAC8D;
+}
+.popular__title {
+  font-family: Old Standard TT;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -0.8000000119px;
+  color: #FFFFFF;
+  margin: 5%;
+}
+.popular__imageBox {
+  min-width: 100px;
+  min-height: 100px;
+  margin-top: 10%;
+}
+.popular__imageBox__img {
+  height: 100%;
+  width: 100%;
+}
+.popular__iconbox {
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+  margin-top: -15px;
+  width: 75%;
+  position: relative;
+  left: 12.5%;
+}
+.popular__iconbox__icon {
+  margin: 2%;
+}
+.popular__infobox {
+  background-color: #FFFFFF;
+  padding: 10%;
+}
+.popular__infobox__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.7200000286px;
+  color: #222222;
+  margin-top: 15%;
+}
+.popular__infobox__text {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 5% 0%;
+}
+.popular__infobox__data {
+  display: flex;
+  justify-content: center;
+}
+.popular__infobox__data__price {
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  margin-right: 7%;
+}
+.popular__infobox__data__button {
+  color: #BDBDBD;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+}
+.popular__container {
+  display: none;
+}
+.popular__seperation {
+  height: 50px;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1000px) {
+  .popular {
+    padding: 5% 15%;
+  }
+  .popular__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+  }
+  .popular__container__column {
+    flex: 1 0 25%;
+  }
+  .popular__swiper {
+    display: none !important;
+  }
+}/*# sourceMappingURL=popular.css.map */

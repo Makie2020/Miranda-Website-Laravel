@@ -1,0 +1,80 @@
+@import "./aboutPage/about.css";
+@import "./details/details.css";
+@import "./homepage/homepage.css";
+@import "./offers/offers.css";
+@import "./roomdetails/roomDetails.css";
+@import "./rooms/rooms.css";
+@import "./swiper/swiper.css";
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.header {
+  background-color: #333333;
+  position: relative;
+  padding: 12% 5%;
+  width: 100%;
+}
+.header__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.7999999523px;
+  color: #FFFFFF;
+  margin: 5% 0%;
+}
+.header__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  color: #FFFFFF;
+  margin-bottom: 10%;
+}
+.header__box {
+  background-color: #FFFFFF;
+  width: 160px;
+  padding: 3%;
+  bottom: 0;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+}
+.header__box__text {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.4799999893px;
+  color: #222222;
+}
+.header__box__text__span {
+  color: #BEAD8E;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    padding: 4% 11%;
+    width: 100%;
+  }
+  .header__subtitle {
+    margin: 2% 0%;
+  }
+  .header__box {
+    width: 185px;
+    padding: 1%;
+    right: 15%;
+    text-align: center;
+  }
+  .header__title {
+    margin-bottom: 1%;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,109 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.form{
+  text-align: center;
+  margin-top: 20%;
+  &__imagebox{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    &__img{
+      width: 100%;
+      height: 100%;
+      margin-bottom: 15%;
+    }
+  }
+  &__form{
+    &__input{
+      width: 90%;
+      border:none;
+      background-color: #F8F8F8;
+      padding: 20px;
+      margin: 2%;
+      &::-webkit-input-placeholder{
+        padding-left: 20px;
+        font-family: $third-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+      }
+    }
+    &__name{
+      background-image: url(../../../icons/user\ Detail.png);
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+    }
+    &__phone{
+      background-image: url(../../../icons/phoneDetails.png);
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+    }
+    &__email{
+      background-image: url(../../../icons/MailDetails.png);
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+    }
+    &__subject{
+      background-image: url(../../../icons/SubjectDetails.png);
+      background-repeat: no-repeat;
+      background-position: left 10px center;
+
+    }
+    &__message{
+      background-image: url(../../../icons/PenDetails.png);
+      background-repeat: no-repeat;
+      background-position: left 10px top 18px;
+      padding: 20px 20px 15em 20px;
+      width: 90%;
+      border:none;
+      background-color: #F8F8F8;
+      margin: 2%;
+      &::-webkit-input-placeholder{
+        padding-left: 20px;
+        font-family: $third-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+      }
+    }
+    &__button{
+      background-color:  #BEAD8E;
+      color: $color;
+      padding: 1.35em 6.2em;
+      margin:0 0.3em 0.3em 0;
+      border: none;
+      font-family: $third-font;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 3.200000047683716px;
+      margin-bottom: 5%;
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .form{
+    padding: 0% 15%;
+    margin: 0;
+  
+    &__form{
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      &__input{
+        flex: 0 0 45%;
+      }
+      &__message{
+        width: 94%;
+        padding-bottom: 15em;
+   
+      }
+      &__button{
+        margin: 0 auto 10em auto;
+      }
+    }
+  }
+}

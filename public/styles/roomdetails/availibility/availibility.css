@@ -1,0 +1,59 @@
+.availability {
+  padding: 5%;
+}
+.availability__title {
+  font-family: "Archivo", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.5400000215px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.availability__input {
+  margin: 5%;
+}
+.availability__input__name {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  color: #222222;
+}
+.availability__input__input {
+  background-image: url(../../../icons/Calender.png);
+  background-repeat: no-repeat;
+  background-position: right 10% center;
+  background-color: #F8F8F8;
+  color: #FFFFFF;
+  padding: 20px;
+  border: none;
+  width: 95%;
+  margin: 5% 0%;
+}
+.availability__input__input::-webkit-input-placeholder {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+}
+.availability__buttonbox {
+  margin-left: 5%;
+}
+.availability__buttonbox__button {
+  background: #BEAD8E;
+  padding: 20px;
+  color: #FFFFFF;
+  border: none;
+  width: 90%;
+  letter-spacing: 2.8px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .availability {
+    padding: 0;
+    flex: 0 0 30%;
+  }
+}/*# sourceMappingURL=availibility.css.map */

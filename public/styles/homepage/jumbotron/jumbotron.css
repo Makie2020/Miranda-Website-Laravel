@@ -1,0 +1,66 @@
+.jumbotron {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 20% 5%;
+}
+.jumbotron__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+}
+.jumbotron__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  margin: 10% 0px;
+}
+.jumbotron__button {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 2.8px;
+  line-height: 15.23px;
+}
+.jumbotron__button__tour {
+  background-color: #BEAD8E;
+  border: none;
+  padding: 5% 19%;
+  margin-bottom: 5%;
+}
+.jumbotron__button__learn {
+  background-color: transparent;
+  padding: 5% 18.5%;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+}
+
+@media only screen and (min-width: 1000px) {
+  .jumbotron {
+    padding: 5% 19%;
+  }
+  .jumbotron__subtitle {
+    font-size: 14px;
+    line-height: 15.23px;
+  }
+  .jumbotron__title {
+    font-size: 120px;
+    line-height: 130px;
+    margin: 4% 0px;
+  }
+  .jumbotron__button {
+    align-items: center;
+  }
+  .jumbotron__button__tour {
+    max-width: 254px;
+    padding: 28px 61px;
+    margin: 0;
+  }
+  .jumbotron__button__learn {
+    max-width: 246px;
+    padding: 26px 64px;
+    letter-spacing: 1.8px;
+    margin-left: 5%;
+  }
+}/*# sourceMappingURL=jumbotron.css.map */

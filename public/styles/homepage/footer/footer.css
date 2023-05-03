@@ -1,0 +1,111 @@
+.footer {
+  background-image: url(../../../icons/BackgroundFooter.png);
+  padding: 5%;
+}
+.footer__text {
+  color: #777777;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.footer__icons__icon {
+  margin: 3%;
+  width: 20px;
+  height: 20px;
+}
+.footer__icons__icon:hover {
+  filter: brightness(50%);
+}
+.footer__icons__icon__twitter {
+  background-color: #BEAD8E;
+}
+.footer__list__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+  margin-top: 5%;
+}
+.footer__list__ul {
+  display: flex;
+  list-style-type: none;
+  margin: 5% 0%;
+}
+.footer__list__ul__column {
+  width: 50vw;
+}
+.footer__list__li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #777777;
+}
+.footer__contact {
+  display: flex;
+  margin: 15% 0%;
+}
+.footer__contact__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+.footer__contact__info__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+}
+.footer__contact__info__data {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #777777;
+}
+
+.disclaimer {
+  background-color: #F8F8F8;
+  width: 100%;
+  padding: 2em;
+}
+.disclaimer__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.4799999893px;
+  padding-top: 2%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    padding: 0 15%;
+  }
+  .footer__container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2em;
+  }
+  .footer__logo__image {
+    text-align: start;
+  }
+  .footer__text {
+    width: 90%;
+  }
+  .footer__list__ul__column {
+    width: 15vw;
+  }
+  .footer__list__li {
+    line-height: 40px;
+  }
+  .disclaimer {
+    display: flex;
+    width: 100%;
+    padding: 2% 15%;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=footer.css.map */

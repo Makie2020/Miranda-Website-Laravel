@@ -1,0 +1,69 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+
+.jumbotron{
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 20% 5%;
+  &__subtitle{
+    font-family: $secondary-font;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2.8px;  
+  }
+  &__title{
+    font-family: $primary-font;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 10% 0px;
+  }
+  &__button{
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 2.8px;  
+    line-height: 15.23px;
+    &__tour{
+      background-color: #BEAD8E;
+      border: none;
+      padding: 5% 19%;
+      margin-bottom: 5%;
+    }
+    &__learn{
+      background-color: transparent;
+      padding: 5% 18.5%;
+      border: 2px solid rgba(255, 255, 255, 0.33);
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .jumbotron{
+    padding: 5% 19%;
+    &__subtitle{
+      font-size: 14px;
+      line-height: 15.23px
+    } 
+    &__title{
+      font-size: 120px;
+      line-height: 130px;
+      margin: 4% 0px;
+    }
+    &__button{
+      align-items: center;
+      &__tour{
+        max-width: 254px;
+        padding: 28px 61px;
+        margin: 0;
+      }
+      &__learn{
+        max-width: 246px;
+        padding: 26px 64px;
+        letter-spacing: 1.8px;
+        margin-left: 5%;
+      }
+    }
+  }
+}

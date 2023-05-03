@@ -1,0 +1,90 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.room{
+  padding: 8%;
+  text-align: center;
+  &__imageBox{
+    min-width: 100px;
+    min-height: 100px;
+    margin-top: 10%;
+    &__img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__iconbox{
+    background-color: $color;
+    box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+    margin-top: -15px;
+    width: 75%;
+    position: relative;
+    left: 12.5%;
+    &__icon{
+      margin: 2%;
+    }
+  }
+  &__infobox{
+    &__title{
+      font-family: $primary-font;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.7200000286102295px;
+      color: #222222;
+      margin-top: 10%;
+    }
+    &__text{
+      color: #777777;
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 5% 0%;
+    }
+    &__data{
+      display: flex;
+      justify-content: center;
+      &__price{
+        color: #BEAD8E;
+        font-family: $secondary-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px;
+        margin-right: 7%;
+      }
+      &__button{
+        color: #BDBDBD;
+        font-family: $secondary-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px;
+      }
+    }
+  }
+  &__pagination{
+    padding: 20% 0% 10% 0%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .room{
+    padding: 5% 15%;
+    &__container{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+    }
+    &__container{
+      &__box{
+        flex: 1 1 30%;
+      }
+    }
+    &__pagination{
+      padding: 7% 0% 4% 0%;
+    }
+  }
+}

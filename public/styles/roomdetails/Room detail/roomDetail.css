@@ -1,0 +1,79 @@
+.header__box {
+  width: 220px;
+}
+
+.detail {
+  padding: 5%;
+}
+.detail__info__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  color: #777777;
+  margin: 5% 0%;
+}
+.detail__info__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.4400000572px;
+  color: #222222;
+}
+.detail__info__price {
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-top: 5%;
+}
+.detail__info__night {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 43px;
+}
+.detail__img {
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.detail__img__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (min-width: 1000px) {
+  .detail {
+    flex: 0 0 60%;
+    padding: 0;
+  }
+  .detail__container {
+    display: flex;
+    padding: 5% 15% 3% 15%;
+    gap: 10%;
+  }
+  .detail__info {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 33%;
+    display: flex;
+    gap: 5%;
+    left: 19%;
+  }
+  .detail__info__subtitle {
+    margin: 1% 0%;
+  }
+  .detail__columnText {
+    flex: 0 0 60%;
+    padding-left: 2em;
+  }
+  .detail__columnPrice {
+    flex: 0 0 30%;
+  }
+}/*# sourceMappingURL=roomDetail.css.map */

@@ -1,0 +1,124 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.footer{
+  background-image: url(../../../icons/BackgroundFooter.png);
+  padding: 5%;
+  &__text {
+    color: #777777;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  &__icons{
+    &__icon{
+      margin: 3%;
+      width: 20px;
+      height: 20px;
+      &:hover{
+        filter: brightness(50%);
+      }
+      &__twitter{
+        background-color:  #BEAD8E;
+      }
+    }
+  }
+  &__list{
+    &__title{
+      font-family: $primary-font;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      color:#222222;
+      margin-top: 5%;
+    }
+    &__ul{
+      display: flex;
+      list-style-type: none; 
+      margin: 5% 0%;
+      &__column {
+        width: 50vw;
+      }
+    }
+    &__li{
+      font-family: $third-font;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 48px;
+      color: #777777;
+    }
+  }
+  &__contact{
+    display: flex;
+    margin: 15% 0%;
+    &__info{
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+      &__title{
+      font-family: $primary-font;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #222222;
+      }
+      &__data{
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #777777;
+      }
+    }
+  }
+ }
+.disclaimer {
+  background-color: #F8F8F8;
+  width: 100%;
+  padding: 2em;
+  &__text{
+    font-family: $third-font;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.47999998927116394px;
+    padding-top: 2%;
+  }
+}  
+@media only screen and (min-width: 1000px) {
+  .footer{
+    padding: 0 15%;
+    &__container{
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 2em;
+    }
+    &__logo{
+      &__image{
+        text-align: start;
+      }
+    }
+    &__text{
+      width: 90%;
+    }
+    &__list{
+      &__ul{
+        &__column{
+          width: 15vw;
+        }
+      }
+      &__li{
+        line-height: 40px;
+      }
+    }
+  }
+  .disclaimer{
+    display: flex;
+    width: 100%;
+    padding: 2% 15%;
+    justify-content: space-between;
+  }
+}

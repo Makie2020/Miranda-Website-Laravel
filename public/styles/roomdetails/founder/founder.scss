@@ -1,0 +1,81 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.founder{
+  padding: 5%;
+  &__imagebox{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+    &__img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;     
+    }
+    &__circle{
+      background-color: #BDAC8D;
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      position: absolute;
+      right: 5%;
+      bottom: 75%;
+    }
+    &__icon{
+      padding: 32%;
+    }
+  }
+  &__infobox{
+    text-align: center;
+    &__title{
+      font-family: $primary-font;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: -0.8999999761581421px;
+      margin: 10% 0% 3% 0%;
+    }
+    &__subtitle{
+      font-family: $secondary-font;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 2.799999952316284px;
+      color: #BDAC8D;
+    }
+    &__text{
+      font-family: $secondary-font;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #777777;
+      margin: 5%;
+     }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .founder{
+    box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+    width: 370px;
+    height: 456px;
+    padding: 2em;
+    margin-left: 15%;
+    &__imagebox{
+      width: 65%;
+      height: 50%;
+      &__circle{
+        width: 60px;
+        height: 60px;
+      }
+      &__icon{
+        padding: 40%;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.icons {
+  text-align: center;
+  margin: 0px 5%;
+}
+.icons__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons__box {
+  flex: 1;
+  padding: 11% 0;
+}
+.icons__box__data__img {
+  margin-bottom: 5%;
+}
+.icons__box__data__img__airplane {
+  background-image: url(../../../icons/About/Background\ Airplane.png);
+  color: #FFFFFF;
+}
+.icons__box__data__text {
+  font-family: "Archivo", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 2.4;
+}
+.icons__desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons__box {
+    margin-right: 5em;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .icons__desktop {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=icons.css.map */

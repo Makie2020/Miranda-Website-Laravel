@@ -1,0 +1,120 @@
+.facilitiesHome {
+  padding: 6%;
+}
+.facilitiesHome__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 2.7999999523px;
+  color: #777777;
+  text-align: center;
+  margin: 8% 0%;
+}
+.facilitiesHome__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2000000477px;
+  color: #222222;
+  text-align: center;
+}
+.facilitiesHome__infobox {
+  margin-top: 30%;
+}
+.facilitiesHome__infobox__box {
+  background-repeat: no-repeat;
+  background-position: right 10% center;
+}
+.facilitiesHome__infobox__icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10%;
+}
+.facilitiesHome__infobox__title {
+  font-family: "Old Standard TT", serif;
+  color: #222222;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 5%;
+}
+.facilitiesHome__infobox__text {
+  font-family: "Archivo", sans-serif;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.facilitiesHome__infobox__pagination {
+  text-align: center;
+}
+.facilitiesHome__desktop {
+  display: none;
+}
+.facilitiesHome__dec {
+  background-image: url(../../../icons/Decoration.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  min-height: 115px;
+  margin-top: 10%;
+}
+.facilitiesHome__decfull {
+  display: none;
+}
+.facilitiesHome__pagination {
+  padding-top: 10%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .facilitiesHome {
+    padding: 10% 15%;
+  }
+  .facilitiesHome__subtitle {
+    margin: 0;
+  }
+  .facilitiesHome__title {
+    text-align: center;
+    margin-top: 1em;
+  }
+  .facilitiesHome__infobox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 2em;
+  }
+  .facilitiesHome__infobox__box {
+    flex: 0 0 295px;
+    background-position: right 10% top;
+    background-size: 5em;
+    margin-top: 3em;
+  }
+  .facilitiesHome__infobox__icon {
+    margin-top: 2em;
+  }
+  .facilitiesHome__infobox__icon__image {
+    margin-bottom: 2em;
+  }
+  .facilitiesHome__infobox__pagination {
+    display: none;
+  }
+  .facilitiesHome__desktop {
+    display: block;
+  }
+  .facilitiesHome__movil {
+    display: none !important;
+  }
+  .facilitiesHome__dec {
+    display: none;
+  }
+  .facilitiesHome__decfull {
+    background-image: url(../../../icons/Decorationfull.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 354px;
+    height: 230px;
+  }
+}/*# sourceMappingURL=facilitiesHome.css.map */

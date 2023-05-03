@@ -1,0 +1,33 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.aboutPage{
+  text-align: center;
+  margin: 5%;
+  &__video{
+    margin-bottom: 8%;
+    text-align: center;
+  }
+  &__title{
+    font-family: $primary-font;
+    font-size: 32px;
+    font-weight: 400;
+    color: #222222;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .aboutPage{
+    margin: 0 15%;
+    &__video{
+      margin: 0 auto;
+      padding-top: 2em;
+    }
+    &__title{
+      width: 65%;
+      margin: 0 auto;
+      padding-top: 2em;
+    }
+  }
+}

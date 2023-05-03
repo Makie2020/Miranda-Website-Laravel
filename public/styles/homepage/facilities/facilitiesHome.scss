@@ -1,0 +1,125 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+.facilitiesHome{
+  padding: 6%;
+  &__subtitle{
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 2.799999952316284px;
+    color:#777777;
+    text-align: center;
+    margin: 8% 0%;
+  }
+  &__title{
+    font-family: $primary-font;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px;
+    color: #222222;
+    text-align: center;
+  }
+  &__infobox{
+    margin-top: 30%;
+    &__box{
+      background-repeat: no-repeat;
+      background-position: right 10% center;
+    }
+    &__icon{
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10%;
+    }
+    &__title{
+      font-family: $primary-font;
+      color: #222222;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 5%;  
+    }
+    &__text{
+      font-family: $secondary-font;
+      color: #777777;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    &__pagination{
+      text-align: center;
+    }
+  }
+  &__desktop{
+    display: none;
+  }
+  &__dec{
+    background-image: url(../../../icons/Decoration.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    min-height: 115px;
+    margin-top: 10%;
+  }
+  &__decfull{
+    display: none;
+  }
+  &__pagination{
+    padding-top: 10%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .facilitiesHome{
+    padding: 10% 15%;
+    &__subtitle{
+      margin: 0;
+    }
+    &__title{
+      text-align: center;
+      margin-top: 1em;
+    }
+    &__infobox{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 5%;
+      margin-top: 2em;
+      &__box{
+        flex: 0 0 295px;
+        background-position: right 10% top;
+        background-size: 5em;
+        margin-top: 3em;
+      }
+      &__icon{
+        margin-top: 2em;
+        &__image{
+          margin-bottom: 2em;
+        }
+      }
+      &__pagination{
+        display: none;
+      }
+    }
+    &__desktop{
+      display: block;
+    }
+    &__movil{
+      display: none!important;
+    }
+    &__dec{
+      display: none;
+    }
+    &__decfull{
+      background-image: url(../../../icons/Decorationfull.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      display: block;
+      width: 354px;
+      height: 230px;
+    }
+
+  }
+}

@@ -1,0 +1,83 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+
+.related{
+  padding: 5% 15%;
+  text-align: center;
+  &__container{
+    display: none;
+  }
+  &__imageBox{
+    min-width: 100px;
+    min-height: 100px;
+    margin-top: 10%;
+    &__img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__iconbox{
+    background-color: $color;
+    box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.05);
+    margin-top: -15px;
+    width: 75%;
+    position: relative;
+    left: 12.5%;
+    &__icon{
+      margin: 2%;
+    }
+  }
+  &__infobox{
+    &__title{
+      font-family: $primary-font;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.7200000286102295px;
+      color: #222222;
+      margin-top: 15%;
+    }
+    &__text{
+      color: #777777;
+      font-family: $third-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 5% 0%;
+    }
+    &__data{
+      display: flex;
+      justify-content: center;
+      &__price{
+        color: #BEAD8E;
+        font-family: $secondary-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px;
+        margin-right: 7%;
+      }
+      &__button{
+        color: #BDBDBD;
+        font-family: $secondary-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17px;
+      }
+    }
+  }
+} 
+@media only screen and (min-width: 1000px) {
+  .related{
+    text-align: left;
+    &__container{
+      display: flex;
+      gap: 8%;
+      &__column{
+        flex: 0 0 30%
+      }
+    }
+  }
+}

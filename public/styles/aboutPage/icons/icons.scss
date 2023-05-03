@@ -1,0 +1,63 @@
+$primary-font: 'Old Standard TT', serif;
+$secondary-font: 'Archivo', sans-serif;
+$third-font: 'Roboto', sans-serif;
+$color: #FFFFFF;
+
+
+.icons{
+  text-align: center;
+  margin: 0px 5%;
+  &__column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__box{
+    flex: 1;
+    padding: 11% 0;
+    &__data{
+  
+      &__img{
+        margin-bottom: 5%;
+        &__airplane{
+          background-image: url(../../../icons/About/Background\ Airplane.png);
+          color: $color;
+        }
+       
+      }
+      &__text{
+        font-family: $secondary-font;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 2.4;
+      }
+    }
+  }
+    &__desktop{
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box{
+      margin-right:5em;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    &__desktop{
+      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
