@@ -43,19 +43,30 @@
       <div class="form__imagebox">
         <img src="./images/20200703_142446.jpg" alt="picture of the swimmingpool" class="form__imagebox__img"/>
       </div>
-      <?php
-            if (isset($_POST['submit'])) {
-                echo "<script>alert('We have receoved yor request and will contact you within 48 hours');</script>" ;
-            }
-        ?>
-      <form method="post" action="details.php">
+      <form  action="{{ route('contact.store') }}" method="POST" enctype="multipart/form-data">
+        @csrf
         <div class="form__form">
-          <input placeholder="Your full name" class="form__form__input form__form__name"/>
-          <input placeholder="Add phone number"class="form__form__input form__form__phone"/>
-          <input placeholder="Enter email address"class="form__form__input form__form__email"/>
-          <input placeholder="Enter subject"class="form__form__input form__form__subject"/>
+          <input type="text" class="form__form__input form__form__phon form-control  @error('name') is-invalid @enderror" name="name" placeholder="Name">
+          @error('name')
+            <div class="form__alert">{{ $message }}</div>
+          @enderror
+          <input type="text" class="form__form__input form__form__phone form-control  @error('phoneNumber') is-invalid @enderror" name="phoneNumber" placeholder="Add phone number">
+          @error('phoneNumber')
+            <div class="form__alert">{{ $message }}</div>
+          @enderror
+          <input type="email" class="form__form__input form__form__email form-control  @error('email') is-invalid @enderror" name="email" placeholder="Email">
+              @error('email')
+          <div class="form__alert">{{ $message }}</div>
+          @enderror
+          <input type="text" class="form__form__input form__form__subject form-control  @error('phoneNumber') is-invalid @enderror" name="subject" placeholder="Enter Subject">
+          @error('subject')
+            <div class="form__alert">{{ $message }}</div>
+          @enderror
         </div>
-        <input placeholder="Enter message"class="form__form__message"/>
+        <input type="text" class="form__form__message form-control  @error('phoneNumber') is-invalid @enderror" name="subject" placeholder="Enter message">
+        @error('message')
+          <div class="form__alert">{{ $message }}</div>
+        @enderror
         <button type = "submit"  name = "submit" value = "Submit" class="form__form__button">SEND</button>
       </form>
     </section>

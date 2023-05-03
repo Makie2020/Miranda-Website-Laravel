@@ -69,6 +69,11 @@ $color: #FFFFFF;
         line-height: 19px;
       }
     }
+    &__alert{
+      font-family: $third-font;
+      font-size: 16px;
+      color: red;
+    }
     &__button{
       background-color:  #BEAD8E;
       color: $color;

@@ -4,15 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Http\Requests\CreateContactRequest;
 
 class ContactController extends Controller
 {
-    public function store() {
-        $contact = Contact::get();
-        return view('details', compact('contact'));
+    public function create(){
+        return view('/details');
     }
-    public function postForm(Request $request)
-    {   
-        return $request;
+
+    public function store(CreateContactRequest $request){   
+        $input = $request->validated();
+        $contact = Contact::create($input);
+        return redirect('/details');
     }
-}
+};

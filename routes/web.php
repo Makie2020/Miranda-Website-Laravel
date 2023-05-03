@@ -20,11 +20,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-
-Route::get('/contact', [ContactController::class, 'store']);
-
-Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
-
+Route::controller(ContactController::class)->group(function () {
+    Route::get('/contact', 'create')->name('contact.create');
+    Route::post('/contact', 'store')->name('contact.store');
+});
 
 Route::get('/about', function(){return view('about');});
 
