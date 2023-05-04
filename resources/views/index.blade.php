@@ -12,18 +12,18 @@
     <!--AVAILIBILITY--> 
     <section class="availibility">
       <div>
-        <form action="index.php" method="post" class="availibility__box">
+        <form action="{{route('search')}}" method="GET" class="availibility__box">
           <div>
             <div class="availibility__firstbox">
               <p class="availibility__text">Arrival Date</p>
               <div class="availibility__input">
-                <input class="availibility__input__box" placeholder="24/03/2023" type="text" name="checkin"></input>
+                <input class="availibility__input__box" placeholder="24/03/2023" type="text" name="checkin"/>
               </div>
             </div>
             <div class="availibility__secondbox">
               <p class="availibility__text">LeDeparture Date</p>
               <div class="availibility__input">
-                <input class="availibility__input__box" placeholder="30/03/2023" type="text" name="checkout"></input>
+                <input class="availibility__input__box" placeholder="30/03/2023" type="text" name="checkout"/>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\RoomsController;
-
+use App\Http\Controllers\SearchAvailibilityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,4 +33,10 @@ Route::get('/rooms', [RoomsController::class, 'store']);
 
 Route::get('/roomdetails/{id}', [RoomsController::class, 'show']);
 
+Route::get('/roomdetails', function(){return view('roomdetails');});
+
 Route::get('/offers', [RoomsController::class, 'showOffers']);
+
+Route::controller(SearchAvailibilityController::class)->group(function () {
+    Route::get('/', 'search')->name('search');
+});

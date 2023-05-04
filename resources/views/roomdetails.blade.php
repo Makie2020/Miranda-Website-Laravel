@@ -1,5 +1,16 @@
 @extends('layouts.app')
 @section('content')
+@if($search->isNotEmpty())
+    @foreach ($search as $room)
+        <div>
+            <p>{{ $room }}</p>
+        </div>
+    @endforeach
+@else 
+    <div>
+        <h2>No Rooms found</h2>
+    </div>
+@endif
     <!--Header--> 
     <section class="header">
       <h3 class="header__subtitle">THE ULTIMATE LUXURY</h3>
